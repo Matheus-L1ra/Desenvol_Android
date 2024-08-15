@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="shortcut icon" href="Imagens/Icone_Logo.ico" type="image/x-icon">
+    <title>Ordem de serviço(OS)</title>
+</head>
+<body class="degrade">
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="formCadastro" autocomplete="off">
+                <h1>Cadastro</h1>
+                <br>
+                <span>Cadastre-se e comece sua jornada</span>
+                <input type="text" placeholder="Nome" id="nomeCadastro">
+                <input type="email" placeholder="Email" id="emailCadastro">
+                <div class="input-container">
+                    <input type="password" placeholder="Senha" id="senhaCadastro" class="password-input">
+                    <i class="fa fa-eye"></i>
+                </div>
+                <button type="submit">Criar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form id="formLogin" autocomplete="off">
+                <h1>Entrar</h1>
+                <span>Logar com senha e email</span>
+                <input type="email" placeholder="Email" id="emailLogin">
+                <div class="input-container">
+                    <input type="password" placeholder="Senha" id="senhaLogin" class="password-input">
+                    <i class="fa fa-eye"></i>
+                </div>
+                <a class="Esqueceu" href="Html/recuperacao.html" id="forgotPassword">Esqueceu a senha?</a>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem vindo!</h1>
+                    <p>Bom trabalho!</p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Olá amigo!</h1>
+                    <p>Registrar no botão abaixo</p>
+                    <button class="hidden" id="register">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts movidos para o final para garantir que todos os elementos DOM estejam carregados -->
+    <script src="login.js"></script>
+</body>
+</html>
